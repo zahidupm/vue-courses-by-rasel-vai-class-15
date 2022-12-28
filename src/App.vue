@@ -1,15 +1,11 @@
 <template>
   <div class="mx-auto p-4">
-    <h2 class="font-bold text-red-500">{{ msg }}</h2>
-    <div
-      v-for="course in courses"
-      class="shadow p-4 mb-4 border border-gray-200"
-    >
-      <h2>{{ course.name }}</h2>
-      <p>{{ course.description }}</p>
-    </div>
+    <p>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+    </p>
+    <router-view> </router-view>
   </div>
-  <button>Test</button>
 </template>
 
 <script>
